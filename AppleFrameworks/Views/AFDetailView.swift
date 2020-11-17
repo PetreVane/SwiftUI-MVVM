@@ -9,7 +9,9 @@ import SwiftUI
 
 struct AFDetailView: View {
     
-    var framework: Framework
+    var framework: AFFramework
+    @Binding var isShowingDetailView: Bool
+    
     
     var body: some View {
         VStack {
@@ -18,6 +20,7 @@ struct AFDetailView: View {
                 Spacer()
                 Button(action: {
                     print("Screen dismiss pressed")
+                    isShowingDetailView.toggle()
                 }, label: {
                     Image(systemName: "xmark.circle")
                         .imageScale(.large)
@@ -59,7 +62,7 @@ struct AFDetailView: View {
 
 struct DetailView_Previews: PreviewProvider {
     static var previews: some View {
-        AFDetailView(framework: MockData.sampleFramework)
+        AFDetailView(framework: AFMockData.sampleFramework, isShowingDetailView: .constant(false))
             .preferredColorScheme(.light)
     }
 }

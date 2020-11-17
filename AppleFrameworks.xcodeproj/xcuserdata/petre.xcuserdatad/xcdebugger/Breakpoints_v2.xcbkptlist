@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "FA3DC778-AFBA-402F-9A82-72F9199C4251"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "83E598F4-699F-416F-A0B2-DC4277A13C6E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AppleFrameworks/Views/FrameworkGridView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
+            landmarkName = "GridFrameworkItem"
+            landmarkType = "14">
+            <Locations>
+               <Location
+                  uuid = "83E598F4-699F-416F-A0B2-DC4277A13C6E - f49fd48039ca2027"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AppleFrameworks.GridFrameworkItem.showDetailView.getter : Swift.Bool"
+                  moduleName = "AppleFrameworks"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/SecondaryDrive/SwiftUI/AppleFrameworks/AppleFrameworks/Views/FrameworkGridView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "48"
+                  endingLineNumber = "48"
+                  offsetFromSymbolStart = "191">
+               </Location>
+               <Location
+                  uuid = "83E598F4-699F-416F-A0B2-DC4277A13C6E - 33372a4d67d058f3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AppleFrameworks.GridFrameworkItem.showDetailView.setter : Swift.Bool"
+                  moduleName = "AppleFrameworks"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/SecondaryDrive/SwiftUI/AppleFrameworks/AppleFrameworks/Views/FrameworkGridView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "48"
+                  endingLineNumber = "48"
+                  offsetFromSymbolStart = "188">
+               </Location>
+               <Location
+                  uuid = "83E598F4-699F-416F-A0B2-DC4277A13C6E - 5dc34ad19334a624"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AppleFrameworks.GridFrameworkItem.showDetailView.modify : Swift.Bool"
+                  moduleName = "AppleFrameworks"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/SecondaryDrive/SwiftUI/AppleFrameworks/AppleFrameworks/Views/FrameworkGridView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "57">
+               </Location>
+               <Location
+                  uuid = "83E598F4-699F-416F-A0B2-DC4277A13C6E - 62662cb2820ba3b2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AppleFrameworks.GridFrameworkItem.showDetailView.modify : Swift.Bool with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "AppleFrameworks"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/SecondaryDrive/SwiftUI/AppleFrameworks/AppleFrameworks/Views/FrameworkGridView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "48"
+                  endingLineNumber = "48"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  uuid = "83E598F4-699F-416F-A0B2-DC4277A13C6E - cd0e3c4e64274c4b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AppleFrameworks.GridFrameworkItem.$showDetailView.getter : SwiftUI.Binding&lt;Swift.Bool&gt;"
+                  moduleName = "AppleFrameworks"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/SecondaryDrive/SwiftUI/AppleFrameworks/AppleFrameworks/Views/FrameworkGridView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "48"
+                  endingLineNumber = "48"
+                  offsetFromSymbolStart = "205">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F2E9755F-EFC9-430D-B2CD-B3A3900AA774"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AppleFrameworks/Views/DetailView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
+            landmarkName = "DetailView_Previews"
+            landmarkType = "14">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

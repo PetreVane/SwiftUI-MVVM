@@ -10,9 +10,11 @@
 		0BA4AEA2255C20910001933E /* AppleFrameworksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA4AEA1255C20910001933E /* AppleFrameworksApp.swift */; };
 		0BA4AEA6255C20920001933E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BA4AEA5255C20920001933E /* Assets.xcassets */; };
 		0BA4AEA9255C20920001933E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BA4AEA8255C20920001933E /* Preview Assets.xcassets */; };
-		0BA4AEB3255C20C80001933E /* Framework.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA4AEB2255C20C80001933E /* Framework.swift */; };
-		0BA4AEB7255C218D0001933E /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA4AEB6255C218D0001933E /* MockData.swift */; };
-		0BA4AEBB255C22CF0001933E /* FrameworkGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA4AEBA255C22CF0001933E /* FrameworkGridView.swift */; };
+		0BA4AEB3255C20C80001933E /* AFFramework.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA4AEB2255C20C80001933E /* AFFramework.swift */; };
+		0BA4AEB7255C218D0001933E /* AFMockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA4AEB6255C218D0001933E /* AFMockData.swift */; };
+		0BA4AEBB255C22CF0001933E /* AFGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA4AEBA255C22CF0001933E /* AFGridView.swift */; };
+		0BDA80E0255D5A1600D1FCFE /* AFDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BDA80DF255D5A1600D1FCFE /* AFDetailView.swift */; };
+		0BDA80E6255D8AEE00D1FCFE /* AFGridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BDA80E5255D8AEE00D1FCFE /* AFGridViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,9 +23,11 @@
 		0BA4AEA5255C20920001933E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0BA4AEA8255C20920001933E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0BA4AEAA255C20920001933E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0BA4AEB2255C20C80001933E /* Framework.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Framework.swift; sourceTree = "<group>"; };
-		0BA4AEB6255C218D0001933E /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
-		0BA4AEBA255C22CF0001933E /* FrameworkGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkGridView.swift; sourceTree = "<group>"; };
+		0BA4AEB2255C20C80001933E /* AFFramework.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFFramework.swift; sourceTree = "<group>"; };
+		0BA4AEB6255C218D0001933E /* AFMockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFMockData.swift; sourceTree = "<group>"; };
+		0BA4AEBA255C22CF0001933E /* AFGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFGridView.swift; sourceTree = "<group>"; };
+		0BDA80DF255D5A1600D1FCFE /* AFDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFDetailView.swift; sourceTree = "<group>"; };
+		0BDA80E5255D8AEE00D1FCFE /* AFGridViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFGridViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,11 +60,11 @@
 		0BA4AEA0255C20910001933E /* AppleFrameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0BA4AEB9255C22AE0001933E /* Views */,
-				0BA4AEB1255C20B50001933E /* Models */,
 				0BA4AEA1255C20910001933E /* AppleFrameworksApp.swift */,
-				0BA4AEA5255C20920001933E /* Assets.xcassets */,
-				0BA4AEAA255C20920001933E /* Info.plist */,
+				0BA4AEB1255C20B50001933E /* Models */,
+				0BA4AEB9255C22AE0001933E /* Views */,
+				0BDA80E3255D78B200D1FCFE /* ViewModels */,
+				0BDA80EC255D8C7100D1FCFE /* Resources */,
 				0BA4AEA7255C20920001933E /* Preview Content */,
 			);
 			path = AppleFrameworks;
@@ -77,8 +81,8 @@
 		0BA4AEB1255C20B50001933E /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				0BA4AEB2255C20C80001933E /* Framework.swift */,
-				0BA4AEB6255C218D0001933E /* MockData.swift */,
+				0BA4AEB2255C20C80001933E /* AFFramework.swift */,
+				0BA4AEB6255C218D0001933E /* AFMockData.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -86,9 +90,27 @@
 		0BA4AEB9255C22AE0001933E /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				0BA4AEBA255C22CF0001933E /* FrameworkGridView.swift */,
+				0BA4AEBA255C22CF0001933E /* AFGridView.swift */,
+				0BDA80DF255D5A1600D1FCFE /* AFDetailView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		0BDA80E3255D78B200D1FCFE /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				0BDA80E5255D8AEE00D1FCFE /* AFGridViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		0BDA80EC255D8C7100D1FCFE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0BA4AEA5255C20920001933E /* Assets.xcassets */,
+				0BA4AEAA255C20920001933E /* Info.plist */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,10 +182,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0BA4AEB7255C218D0001933E /* MockData.swift in Sources */,
-				0BA4AEB3255C20C80001933E /* Framework.swift in Sources */,
-				0BA4AEBB255C22CF0001933E /* FrameworkGridView.swift in Sources */,
+				0BA4AEB7255C218D0001933E /* AFMockData.swift in Sources */,
+				0BA4AEB3255C20C80001933E /* AFFramework.swift in Sources */,
+				0BA4AEBB255C22CF0001933E /* AFGridView.swift in Sources */,
+				0BDA80E0255D5A1600D1FCFE /* AFDetailView.swift in Sources */,
 				0BA4AEA2255C20910001933E /* AppleFrameworksApp.swift in Sources */,
+				0BDA80E6255D8AEE00D1FCFE /* AFGridViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,7 +319,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"AppleFrameworks/Preview Content\"";
 				DEVELOPMENT_TEAM = 9W3WH25P2R;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = AppleFrameworks/Info.plist;
+				INFOPLIST_FILE = AppleFrameworks/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -317,7 +341,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"AppleFrameworks/Preview Content\"";
 				DEVELOPMENT_TEAM = 9W3WH25P2R;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = AppleFrameworks/Info.plist;
+				INFOPLIST_FILE = AppleFrameworks/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

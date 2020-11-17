@@ -9,25 +9,28 @@ import SwiftUI
 
 struct AFGridView: View {
     
+    @StateObject var model = AFGridViewModel()
     let columns = [
         GridItem(.flexible()),
         GridItem(.flexible()),
         GridItem(.flexible())
     ]
     
-    @State private var isDetailViewPresented = false
     
     var body: some View {
         
         NavigationView {
             ScrollView([.vertical]) {
                 LazyVGrid(columns: columns) {
-                    ForEach(MockData.frameworks, id: \.id) { framework in
-                        GridFrameworkItem(framework: framework)
-                      
+                    ForEach(AFMockData.frameworks, id: \.id) { framework in
+                        AFGridItem(framework: framework)
+                            .onTapGesture { model.selectedFramework = framework }
                     }
                 }
                 .navigationTitle("🥑 frameworks")
+                .sheet(isPresented: $model.isDetailViewPresented) {
+                    AFDetailView(framework: model.selectedFramework ?? AFMockData.sampleFramework, isShowingDetailView: $model.isDetailViewPresented)
+                }
             }
         }
     }
@@ -36,14 +39,15 @@ struct AFGridView: View {
 struct GridView_Previews: PreviewProvider {
     static var previews: some View {
         AFGridView()
+            .preferredColorScheme(.dark)
             
     }
 }
 
 
-struct GridFrameworkItem: View {
+struct AFGridItem: View {
     
-    let framework: Framework
+    let framework: AFFramework
     
     var body: some View {
         
