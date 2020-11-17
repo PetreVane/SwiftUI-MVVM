@@ -8,7 +8,7 @@
 import Foundation
 
 
-struct MockData {
+struct AFMockData {
     
     static let sampleFramework = Framework(name: "ARKit",
                                            imageName: "arkit",
