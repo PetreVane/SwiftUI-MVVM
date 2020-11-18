@@ -40,7 +40,7 @@ struct AFGridView: View {
 struct GridView_Previews: PreviewProvider {
     static var previews: some View {
         AFGridView()
-            .preferredColorScheme(.dark)
+            .preferredColorScheme(.light)
             
     }
 }
