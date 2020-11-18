@@ -10,6 +10,7 @@ import SwiftUI
 struct AFGridView: View {
     
     @StateObject var model = AFGridViewModel()
+    
     let columns = [
         GridItem(.flexible()),
         GridItem(.flexible()),

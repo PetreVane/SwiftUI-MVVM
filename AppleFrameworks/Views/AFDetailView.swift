@@ -11,11 +11,11 @@ struct AFDetailView: View {
     
     var framework: AFFramework
     @Binding var isShowingDetailView: Bool
+    @State private var isWebviewShown = false
     
     
     var body: some View {
         VStack {
-           
             HStack {
                 Spacer()
                 Button(action: {
@@ -39,14 +39,15 @@ struct AFDetailView: View {
                     .fontWeight(.regular)
                     .multilineTextAlignment(.leading)
             }.padding()
+            .fullScreenCover(isPresented: $isWebviewShown) {
+                SafariView(url: (URL(string: framework.urlString) ?? URL(string: "https://google.com"))!)
+            }
             
             Spacer()
             
             Button(action: {
-                
-                print("Button pressed")
-                
-            }, label: {
+                isWebviewShown.toggle()},
+            label: {
                 Text("Learn more")
                     .font(.title2)
                     .fontWeight(.bold)
